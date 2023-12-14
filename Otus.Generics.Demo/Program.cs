@@ -32,10 +32,9 @@ namespace Otus.Generics.Demo
 
             //Ограничения
             new ClassConstraintsDemo().Show();
-
-
             new ConstraintsDemo().Show();
 
+            //Ковариантность и контравариантность
             new CoContrVarDemo().Show();
         }
 
