@@ -27,12 +27,12 @@ namespace Otus.Generics.Demo
         }
     }
 
-    public class InheritanceShower : IBaseDemoShower
+    public class InheritanceDemo : IBaseDemo
     {
         public void Show()
         {
-            var con=new ColOfNumbers();
-            con.Values=new double[]{1,2,3,4,5};
+            var con = new ColOfNumbers();
+            con.Values = new double[] { 1, 2, 3, 4, 5 };
             Console.WriteLine($"Avg={con.GeomAvg()}");
         }
     }

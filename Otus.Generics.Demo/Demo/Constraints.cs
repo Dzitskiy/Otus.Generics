@@ -3,7 +3,6 @@ using System;
 namespace Otus.Generics.Demo
 {
 
-
     class EmptyConstructor { }
 
     /// <summary>
@@ -83,10 +82,10 @@ namespace Otus.Generics.Demo
     }
 
 
-/// <summary>
-/// 
-/// </summary>
-/// <typeparam name="TV"></typeparam>
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="TV"></typeparam>
     class Rider<TV> where TV : IVehicle
     {
         public void RideAVehicle(TV vehicle)
@@ -97,7 +96,7 @@ namespace Otus.Generics.Demo
     }
 
 
-    public class ConstraintsShower : IBaseDemoShower
+    public class ConstraintsDemo : IBaseDemo
     {
         public void Show()
         {
@@ -121,10 +120,6 @@ namespace Otus.Generics.Demo
             Console.WriteLine();
             Console.WriteLine($"kv1={kv1} kv2={kv2}");
             Console.WriteLine();
-
-
         }
     }
-
-
 }

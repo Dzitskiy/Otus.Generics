@@ -12,7 +12,7 @@ namespace Otus.Generics.Demo
     class Automobile : Vehicle { }
 
 
-    public class CoContrVarShower : IBaseDemoShower
+    public class CoContrVarDemo : IBaseDemo
     {
 
 
@@ -23,7 +23,7 @@ namespace Otus.Generics.Demo
 
 
         interface IDemo<out T> { }
-        
+
         class ClassDemo<T> : IDemo<T> { }
 
         public void Show()

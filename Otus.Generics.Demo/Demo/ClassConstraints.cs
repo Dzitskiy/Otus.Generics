@@ -11,9 +11,9 @@ namespace Otus.Generics.Demo
 
     }
 
-/// <summary>
-/// Красно-зеленые настройки
-/// </summary>
+    /// <summary>
+    /// Красно-зеленые настройки
+    /// </summary>
     class RedAndGreenSettings : IConsoleSettings
     {
         public ConsoleColor Foreground => ConsoleColor.Green;
@@ -22,9 +22,9 @@ namespace Otus.Generics.Demo
     }
 
 
-/// <summary>
-/// Фиолетовые и красные настройки
-/// </summary>
+    /// <summary>
+    /// Фиолетовые и красные настройки
+    /// </summary>
     class CyanAndWhiteSettings
     {
         public ConsoleColor Foreground => ConsoleColor.Green;
@@ -59,7 +59,7 @@ namespace Otus.Generics.Demo
         }
     }
 
-    public class ClassConstraintsShower : IBaseDemoShower
+    public class ClassConstraintsDemo : IBaseDemo
     {
         public void Show()
         {

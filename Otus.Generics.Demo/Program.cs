@@ -18,21 +18,25 @@ namespace Otus.Generics.Demo
     {
         static void Main(string[] args)
         {
-            // Введение в дженерики
-            (new IntroShower()).Show();
+            // Введение в Generic
+            new GenericDemo().Show();
 
-            (new InheritanceShower()).Show();
+            // Наследование Generic
+            new InheritanceDemo().Show();
 
-            (new MultipleGenericShower()).Show();
+            // Generic с несколькими типами
+            new MultipleGenericDemo().Show();
 
-            (new DefaultShower()).Show();
+            // Значения по умолчанию в Generic
+            new DefaultDemo().Show();
 
-            (new ClassConstraintsShower()).Show();
+            //Ограничения
+            new ClassConstraintsDemo().Show();
 
-            (new ConstraintsShower()).Show();
 
-            (new CoContrVarShower()).Show();
+            new ConstraintsDemo().Show();
 
+            new CoContrVarDemo().Show();
         }
 
     }

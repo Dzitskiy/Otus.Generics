@@ -16,7 +16,7 @@ namespace Otus.Generics.Demo
     }
 
 
-    public class MultipleGenericShower : IBaseDemoShower
+    public class MultipleGenericDemo : IBaseDemo
     {
         public void Show()
         {

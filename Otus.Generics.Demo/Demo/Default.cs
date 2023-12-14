@@ -10,16 +10,16 @@ namespace Otus.Generics.Demo
 
         public static void DisplayDefault<T>()
         {
-          var val=default(T);
+            var val = default(T);
 
             Console.WriteLine($"The value of type {typeof(T)} is: {(val == null ? "null" : val.ToString())}");
-      }
+        }
 
     }
 
-    class Foo{}
+    class Foo { }
 
-    public class DefaultShower : IBaseDemoShower
+    public class DefaultDemo : IBaseDemo
     {
         public void Show()
         {

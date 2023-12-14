@@ -2,13 +2,13 @@ using System;
 
 namespace Otus.Generics.Demo
 {
-    public class Intro<T>
+    public class GenericType<T>
     {
         private T val;
 
-        public Intro(T v)
+        public GenericType(T v)
         => val = v;
-        
+
         public void PrintMe()
         => Console.WriteLine($"I'm '{val}' and my type is '{typeof(T)}'");
 
@@ -16,35 +16,34 @@ namespace Otus.Generics.Demo
         => Console.WriteLine($"2. I'm '{v}' and my type is '{v.GetType()}'");
     }
 
-    public class IntroShower : IBaseDemoShower
+    public class GenericDemo : IBaseDemo
     {
         public void Show()
         {
-    
-            // При создании объекта - указываем тип в '<>'
-            var intIntro = new Intro<int>(2);
-            intIntro.PrintMe();
 
-            var stringIntro = new Intro<string>("hello");
-            stringIntro.PrintMe();
+            // При создании объекта - указываем тип в '<>'
+            var intGeneric = new GenericType<int>(2);
+            intGeneric.PrintMe();
+
+            var stringGeneric = new GenericType<string>("hello");
+            stringGeneric.PrintMe();
 
             Console.WriteLine();
 
-            stringIntro.PrintMeType(2.0);
+            stringGeneric.PrintMeType(2.0);
 
             // Можем явно указывать тип
-            stringIntro.PrintMeType<bool>(false);
+            stringGeneric.PrintMeType(false);
 
             // Если тип выводится - может тип <bool> не указывать
-            stringIntro.PrintMeType(false);
+            stringGeneric.PrintMeType(false);
 
 
             Console.WriteLine();
 
-
             // Перечисления тоже разделяются по типам
-            stringIntro.PrintMeType(E1.A);
-            stringIntro.PrintMeType(E2.A);
+            stringGeneric.PrintMeType(E1.A);
+            stringGeneric.PrintMeType(E2.A);
         }
     }
 }
