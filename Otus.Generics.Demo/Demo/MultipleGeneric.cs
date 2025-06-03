@@ -1,3 +1,5 @@
+using System;
+
 namespace Otus.Generics.Demo
 {
     // Два обобщенных типа TKey и TValue
@@ -22,6 +24,14 @@ namespace Otus.Generics.Demo
         {
             var kv1 = new MyKeyValue<int, string>(1, "Hello");
             var kv2 = new MyKeyValue<float, bool>(1f, false);
+            var kv3 = new MyKeyValue<double, bool>(2, false);
+            var kv4 = new MyKeyValue<object, object>(1f, false);
+
+            Console.WriteLine(kv1);
+            Console.WriteLine(kv2);
+            Console.WriteLine(kv3);
+            Console.WriteLine(kv4);
+
         }
     }
 }

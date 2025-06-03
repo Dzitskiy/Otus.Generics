@@ -25,9 +25,9 @@ namespace Otus.Generics.Demo
     /// <summary>
     /// Фиолетовые и красные настройки
     /// </summary>
-    class CyanAndWhiteSettings
+    class CyanAndWhiteSettings : IConsoleSettings
     {
-        public ConsoleColor Foreground => ConsoleColor.Green;
+        public ConsoleColor Foreground => ConsoleColor.Cyan;
 
         public ConsoleColor Background => ConsoleColor.Red;
     }
@@ -63,9 +63,9 @@ namespace Otus.Generics.Demo
     {
         public void Show()
         {
-            var rg = new RedAndGreenSettings();
+            var rg = new CyanAndWhiteSettings();
 
-            var cf = new ConsoleFormatter<RedAndGreenSettings>(rg);
+            var cf = new ConsoleFormatter<CyanAndWhiteSettings>(rg);
 
             cf.WriteColored("Hello, world");
 
