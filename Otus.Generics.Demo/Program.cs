@@ -22,20 +22,20 @@ namespace Otus.Generics.Demo
             new GenericDemo().Show();
 
             // Наследование Generic
-            new InheritanceDemo().Show();
+            //new InheritanceDemo().Show();
 
             // Generic с несколькими типами
-            new MultipleGenericDemo().Show();
+            //new MultipleGenericDemo().Show();
 
             // Значения по умолчанию в Generic
-            new DefaultDemo().Show();
+            //new DefaultDemo().Show();
 
             //Ограничения
-            new ClassConstraintsDemo().Show();
-            new ConstraintsDemo().Show();
+            //new ClassConstraintsDemo().Show();
+            //new ConstraintsDemo().Show();
 
             //Ковариантность и контравариантность
-            new CoContrVarDemo().Show();
+            //new CoContrVarDemo().Show();
         }
 
     }
